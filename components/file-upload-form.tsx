@@ -17,8 +17,8 @@ const DEFAULT_EXPIRY_HOURS = 24;
 
 export default function FileUploadForm() {
   const [file, setFile] = useState<File | null>(null);
-  const [downloadLimit, setDownloadLimit] = useState<number | ''>(DEFAULT_DOWNLOAD_LIMIT);
-  const [expiryHours, setExpiryHours] = useState<number | ''>(DEFAULT_EXPIRY_HOURS);
+  const [downloadLimit, setDownloadLimit] = useState<number | ''>('');
+  const [expiryHours, setExpiryHours] = useState<number | ''>('');
   const [downloadInputFocused, setDownloadInputFocused] = useState(false);
   const [expiryInputFocused, setExpiryInputFocused] = useState(false);
   const [captchaVerified, setCaptchaVerified] = useState(false);
@@ -272,7 +272,7 @@ export default function FileUploadForm() {
             
             <div className="space-y-2">
               <label className="text-sm text-muted-foreground">
-                Timer
+                Timer (hours)
               </label>
               <div className="relative">
                 <Input
