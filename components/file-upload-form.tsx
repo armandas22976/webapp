@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Button } from '@/components/ui/button';
@@ -84,7 +84,7 @@ export default function FileUploadForm() {
       const fileName = `${secureId}.${fileExtension}`;
       
       // Upload file to Supabase Storage
-      const { error } = await supabase.storage
+      const { data, error } = await supabase.storage
         .from('files')
         .upload(fileName, file);
       
