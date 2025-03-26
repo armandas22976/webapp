@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import { useDropzone } from 'react-dropzone';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Button } from '@/components/ui/button';
@@ -84,7 +84,7 @@ export default function FileUploadForm() {
       const fileName = `${secureId}.${fileExtension}`;
       
       // Upload file to Supabase Storage
-      const { error } = await supabase.storage
+      const { data, error } = await supabase.storage
         .from('files')
         .upload(fileName, file);
       
@@ -200,7 +200,7 @@ export default function FileUploadForm() {
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
         <CardTitle className="text-center text-2xl font-bold">
-          Upload Your File Securely
+          Upload Your File
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-6">
@@ -239,7 +239,7 @@ export default function FileUploadForm() {
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <label className="text-sm text-muted-foreground">
-                Expire after downloads (max 10)
+                Download counter
               </label>
               <div className="relative">
                 <Input
@@ -272,7 +272,7 @@ export default function FileUploadForm() {
             
             <div className="space-y-2">
               <label className="text-sm text-muted-foreground">
-                Expire after hours (max 168)
+                Timer
               </label>
               <div className="relative">
                 <Input
