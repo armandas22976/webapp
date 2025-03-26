@@ -16,7 +16,7 @@ export default function AboutPage() {
             About Anon File Share
           </h1>
           <p className="text-lg text-muted-foreground">
-            Your secure solution for temporary file sharing
+            Your secure solution for temporary, anonymous file sharing
           </p>
         </div>
 
