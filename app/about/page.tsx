@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Lock, Clock, Download, Shield, Upload } from "lucide-react";
+import { Lock, Clock, Shield, Upload } from "lucide-react";
 
 export const metadata: Metadata = {
   title: 'About - Secure FileShare',
@@ -13,7 +13,7 @@ export default function AboutPage() {
       <div className="flex flex-col items-center justify-center gap-8 py-8">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-            About Secure File Share
+            About Secure FileShare
           </h1>
           <p className="text-lg text-muted-foreground">
             Your secure solution for temporary file sharing
@@ -26,7 +26,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-8">
             <p>
-              Secure File Share is designed to make sharing files easy, secure, and private. Our platform leverages modern encryption and temporary storage to ensure your files remain protected during the sharing process.
+              Secure FileShare is designed to make sharing files easy, secure, and private. Our platform leverages modern encryption and temporary storage to ensure your files remain protected during the sharing process.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -74,7 +74,7 @@ export default function AboutPage() {
                   <h3 className="text-lg font-semibold">Privacy First</h3>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Files are automatically deleted after expiration. We don't track or analyze your content.
+                  Files are automatically deleted after expiration. We don&apos;t track or analyze your content.
                 </p>
               </div>
             </div>

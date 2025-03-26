@@ -24,8 +24,8 @@ Use this guide to build a web app that allows users to share files.
   - **Optional settings (below upload area):**
     - **Expiration Settings:**
       - Enter:
-        - Expire after (number of downloads) downloads
-        - Expire after (time duration) hours
+        - Expire after (number of downloads) downloads (maximum 10)
+        - Expire after (time duration) hours (maximum 168)
   - **reCAPTCHA v2 widget:**
     - "I'm not a robot" checkbox
   - **Upload button:** "Upload & Get Link" (enabled after file selected & CAPTCHA verified)

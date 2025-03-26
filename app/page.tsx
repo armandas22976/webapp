@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FileUploadForm from "@/components/file-upload-form";
 
 export default function Home() {
