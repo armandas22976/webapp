@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Secure File Share - Share Your Files Securely",
-  description: "Securely share files with expiration dates and download limits",
+  title: "Anon File Share - Share Your Files Privately and Securely",
+  description: "Anonymously share files with expiration dates and download limits",
 };
 
 export default function RootLayout({
