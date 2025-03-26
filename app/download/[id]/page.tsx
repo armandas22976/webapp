@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import FileDownload from "@/components/file-download";
 
 export const metadata: Metadata = {
-  title: 'Download File - Secure FileShare',
+  title: 'Download File - Secure File Share',
   description: 'Download your securely shared file',
 };
 
