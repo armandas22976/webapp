@@ -6,7 +6,13 @@ export const metadata: Metadata = {
   description: 'Download your securely shared file',
 };
 
-export default function DownloadPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function DownloadPage({ params }: PageProps) {
   return (
     <div className="container mx-auto max-w-5xl">
       <div className="flex flex-col items-center justify-center py-8">
