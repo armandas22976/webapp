@@ -6,7 +6,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center gap-8 py-8">
         <div className="text-center max-w-2xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-            Share Your Files Securely
+            Share Your Files Anonymously
           </h1>
           <p className="text-lg text-muted-foreground">
             Upload files with expiration settings and get a secure download link for sharing.
